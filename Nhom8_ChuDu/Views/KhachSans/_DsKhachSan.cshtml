@@ -4,14 +4,14 @@
         @foreach (var item in Model)
         {
             <div class="item-khachsan">
-                <a href="#">
+                <a href="@Url.Action("Detail","KhachSans", new { id = item.IDKS })">
                     <div class="product-img">
                         @{
                             string ImagePath = "~/Image/Khách sạn/" + item.Anh;
                         }
                         <img class="w-100" src="@Url.Content(ImagePath)" alt="">
                         <div class="detail-item">
-                            <button class="btn-detail">XEM CHI TIẾT</button>
+                            <button name="btn-detail" class="btn-detail">XEM CHI TIẾT</button>
                         </div>
                     </div>
                     <p>@Html.DisplayFor(modelItem => item.Ten)</p>

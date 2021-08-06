@@ -17,13 +17,19 @@ namespace Nhom8_ChuDu.Controllers
         // GET: KhachSans
         public ActionResult Index()
         {
-            var khachSans = db.KhachSans.Select(p => p);
-            return View(khachSans.ToList());
+            return View();
         }
         public PartialViewResult _DsKhachSan()
         {
             var khachSans = db.KhachSans.Select(p => p);
             return PartialView(khachSans);
+        }
+
+        public ActionResult Detail(string id)
+        {
+            int maKS = int.Parse(id);
+            var phongKS = db.PhongKS.Where(p => p.IDKS.Equals(maKS));
+            return View(phongKS.ToList());
         }
 
         // GET: KhachSans/Details/5

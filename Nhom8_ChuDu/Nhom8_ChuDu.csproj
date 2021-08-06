@@ -216,6 +216,7 @@
     <Content Include="Views\KhachSans\Edit.cshtml" />
     <Content Include="Views\KhachSans\Index.cshtml" />
     <Content Include="Views\KhachSans\_DsKhachSan.cshtml" />
+    <Content Include="Views\KhachSans\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

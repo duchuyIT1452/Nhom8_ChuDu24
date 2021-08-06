@@ -370,3 +370,67 @@ table {
     .post-share .social__button {
         height: 32px;
     }
+
+
+hr {
+    margin-top: 10px;
+}
+
+.detail__container {
+    width: 100%;
+    padding: 80px;
+}
+
+.detail__container h2:first-child {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table__detail {
+    width: 60%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table__detail th {
+    height: 30px;
+}
+
+.table__detail td {
+    width: 100px;
+    text-align: center;
+}
+
+.table__detail tr{
+    height: 30px;
+}
+
+i {
+    color: #4790cd;
+    margin-left: 30px;
+}
+
+.service {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mrgl3x {
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cancel__condition {
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
