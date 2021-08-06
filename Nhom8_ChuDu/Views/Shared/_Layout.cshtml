@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="~/Content/TrangChu.css" type="text/css" rel="stylesheet" />
+    <link href="~/Content/Item_KhachSan.css" type="text/css" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
@@ -87,6 +88,10 @@
             </div>
         </div>
     </header>
+    <div class="body-content">
+        @RenderBody()
+        <hr />
+    </div>
     <footer id="footer">
         <div class="container">
             <div class="left">
@@ -198,10 +203,7 @@
             </div>
         </div>
     </footer>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-    </div>
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
