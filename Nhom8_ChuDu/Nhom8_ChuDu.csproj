@@ -151,6 +151,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Contact.css" />
     <Content Include="Content\Content.css" />
     <Content Include="Content\Item_KhachSan.css" />
     <Content Include="Content\TrangChu.css" />
@@ -158,6 +159,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\favicon.ico" />
     <Content Include="Image\Khách sạn\130505661.jpg" />
     <Content Include="Image\Khách sạn\46753234781-eb34a58a12-k-1152533.jpg" />
     <Content Include="Image\Khách sạn\4c48b87b87ca7e9427db15-1021494.jpg" />
@@ -189,6 +191,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Contact.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -220,6 +223,7 @@
     <Content Include="Views\KhachSans\_DsKhachSan.cshtml" />
     <Content Include="Views\KhachSans\Detail.cshtml" />
     <Content Include="Views\ThanhPhoes\_DsThanhPho.cshtml" />
+    <Content Include="Views\Shared\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

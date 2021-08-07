@@ -26,5 +26,10 @@ namespace Nhom8_ChuDu.Controllers
             var thanhPhoes = db.ThanhPhoes.Select(p => p);
             return PartialView(thanhPhoes);
         }
+        public PartialViewResult _SearchThanhPho()
+        {
+            var thanhPhoes = db.ThanhPhoes.Select(p => p);
+            return PartialView(thanhPhoes);
+        }
     }
 }
