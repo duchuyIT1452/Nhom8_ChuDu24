@@ -154,11 +154,15 @@
     <Content Include="Content\Contact.css" />
     <Content Include="Content\Content.css" />
     <Content Include="Content\Item_KhachSan.css" />
+    <Content Include="Content\Slider.css" />
     <Content Include="Content\TrangChu.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\360x433-bo-suu-tap-3.jpg" />
+    <Content Include="Image\360x433-top-resort-sieu-sang-4.jpg" />
+    <Content Include="Image\360x433-Tron-goi-he-gd---Mien-phi-tre-em--4.jpg" />
     <Content Include="Image\favicon.ico" />
     <Content Include="Image\Khách sạn\130505661.jpg" />
     <Content Include="Image\Khách sạn\46753234781-eb34a58a12-k-1152533.jpg" />
@@ -202,6 +206,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Slider.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -224,6 +229,7 @@
     <Content Include="Views\KhachSans\Detail.cshtml" />
     <Content Include="Views\ThanhPhoes\_DsThanhPho.cshtml" />
     <Content Include="Views\Shared\Contact.cshtml" />
+    <Content Include="Views\Shared\Slider.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
