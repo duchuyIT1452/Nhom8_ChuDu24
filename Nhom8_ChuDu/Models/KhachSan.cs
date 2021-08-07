@@ -21,11 +21,15 @@ namespace Nhom8_ChuDu.Models
 
         public string Ten { get; set; }
 
-        public string ThanhPho { get; set; }
-
         public string DiaChi { get; set; }
 
         public string Anh { get; set; }
+
+        public string MoTa { get; set; }
+
+        public int? IDThanhPho { get; set; }
+
+        public virtual ThanhPho ThanhPho { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PhongK> PhongKS { get; set; }
