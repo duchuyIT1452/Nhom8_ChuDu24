@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Nhom8_ChuDu.Models.ThanhPho>
+<div class="bg">
+    <div class="container-item bot">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="item-khachsan">
+                    <a href="#">
+                        <div class="product-img">
+                            @{
+                                string ImagePath = "~/Image/Tỉnh thành/" + item.Anh;
+                            }
+                            <img class="w-100" src="@Url.Content(ImagePath)" alt="">
+                        </div>
+                        <p class="tinh">@Html.DisplayFor(modelItem => item.Ten)</p>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

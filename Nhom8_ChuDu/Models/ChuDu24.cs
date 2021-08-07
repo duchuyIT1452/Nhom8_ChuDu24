@@ -64,5 +64,7 @@ namespace Nhom8_ChuDu.Models
                 .Property(e => e.SDT)
                 .IsFixedLength();
         }
+
+        public System.Data.Entity.DbSet<Nhom8_ChuDu.Models.ThanhPho> ThanhPhoes { get; set; }
     }
 }
