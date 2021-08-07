@@ -4,6 +4,7 @@ ul {
     list-style: none;
 }
 
+
 .slider__main a {
     text-decoration: none;
 }
@@ -103,6 +104,7 @@ ul {
 
     .div-sub-menu li {
         width: 100%;
+        border-bottom: 1px solid #999;
         padding: 0 5px;
         height: 39.5px;
         overflow: hidden;
@@ -110,6 +112,9 @@ ul {
         list-style: none !important;
         margin-left: 0 !important;
         margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
         .div-sub-menu li:hover {
@@ -118,11 +123,10 @@ ul {
 
         .div-sub-menu li > a {
             text-decoration: none;
-            border-bottom: 1px solid #999;
+            font-family:Arial;
             display: block;
             width: 90%;
             text-transform: none;
-            height: 100%;
             margin-left: 15px;
         }
 
@@ -156,7 +160,7 @@ ul {
 
 .slideshow-container {
     width: 360px;
-    height: 433px;
+    height: 100%;
     position: relative;
     margin: auto;
     overflow: hidden;
