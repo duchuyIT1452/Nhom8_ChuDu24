@@ -155,6 +155,7 @@
     <Content Include="Content\Contact.css" />
     <Content Include="Content\Content.css" />
     <Content Include="Content\Item_KhachSan.css" />
+    <Content Include="Content\Search.css" />
     <Content Include="Content\Slider.css" />
     <Content Include="Content\TrangChu.css" />
     <Content Include="favicon.ico" />
@@ -231,6 +232,8 @@
     <Content Include="Views\ThanhPhoes\_DsThanhPho.cshtml" />
     <Content Include="Views\Shared\Contact.cshtml" />
     <Content Include="Views\Shared\Slider.cshtml" />
+    <Content Include="Views\Shared\Search.cshtml" />
+    <Content Include="Views\ThanhPhoes\_SearchThanhPho.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

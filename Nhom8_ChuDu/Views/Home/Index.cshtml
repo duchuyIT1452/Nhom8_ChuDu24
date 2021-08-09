@@ -3,6 +3,9 @@
     ViewBag.Title = "Trang chủ";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@{
+    Html.RenderAction("_SearchThanhPho", "ThanhPhoes");
+}
 @Html.Partial("Slider");
 <div style="width: 90%; color:#666; font-family:Arial; font-weight:400; font-size:18px;">
     <p style="color:#666; font-family:Arial; font-weight:400; font-size:18px;">TOP KHUYẾN MÃI</p>
