@@ -170,7 +170,6 @@
     <Content Include="Content\khachsan.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\Search.css" />
-    <Content Include="Content\SearchKhachSan.css" />
     <Content Include="Content\Slider.css" />
     <Content Include="Content\TrangChu.css" />
     <Content Include="favicon.ico" />
@@ -249,10 +248,6 @@
     <Content Include="Views\Shared\Slider.cshtml" />
     <Content Include="Views\Shared\Search.cshtml" />
     <Content Include="Views\ThanhPhoes\_SearchThanhPho.cshtml" />
-<<<<<<< HEAD
-    <Content Include="Views\KhachSans\_SearchKhachSan.cshtml" />
-    <Content Include="Views\KhachSans\TopKhuyenMai.cshtml" />
-=======
     <Content Include="Views\ThanhPhoes\Create.cshtml" />
     <Content Include="Views\ThanhPhoes\Delete.cshtml" />
     <Content Include="Views\ThanhPhoes\Details.cshtml" />
@@ -292,7 +287,6 @@
     <Content Include="Views\KhachSans\DonHang.cshtml" />
     <Content Include="Views\KhachSans\GioHang.cshtml" />
     <Content Include="Views\KhachSans\PhongKs.cshtml" />
->>>>>>> 7feec651577ea7bea95c5e6bc03075d15ef66324
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
