@@ -1,26 +1,29 @@
 ﻿@model IEnumerable<Nhom8_ChuDu.Models.ThanhPho>
+
 <div class="main-search">
     <div class="container">
         <div class="search">
             <div class="search-container">
                 <div class="left">
-                    <div class="city-search">
-                        <p>Thành phố</p>
-                        <select class="select-city">
-                            <option value="" selected disabled hidden>Chọn thành phố</option>
-                            @foreach (var item in Model)
-                            {
-                                <option value="@item.IDThanhPho">@item.Ten</option>
-                            }
-                        </select>
-                    </div>
-                    <div class="hotel-search">
-                        <p>Khách sạn</p>
-                        <input type="text" placeholder="Nhập tên khách sạn" />
-                    </div>
-                    <div class="button-search">
-                        <button type="submit">TÌM KIẾM<i style="margin-left: 5px;" class="fas fa-search"></i></button>
-                    </div>
+                    <form action="/KhachSans/_SearchKhachSan" method="post">
+                        <div class="city-search">
+                            <p>Thành phố</p>
+                            <select name="city" id="city" class="select-city">
+                                <option  value="" selected disabled hidden>Chọn thành phố</option>
+                                @foreach (var item in Model)
+                                {
+                                    <option value="@item.IDThanhPho">@item.Ten</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="hotel-search">
+                            <p>Khách sạn</p>
+                            <input type="text" placeholder="Nhập tên khách sạn" />
+                        </div>
+                        <div class="button-search">
+                            <button type="submit">TÌM KIẾM<i style="margin-left: 5px;" class="fas fa-search"></i></button>
+                        </div>
+                    </form>
                 </div>
                 <div class="right">
                     <p style="color: #4790cd; font-weight: 600; margin-bottom: 5px; font-size: 17px;">Niềm vui của Chudu24</p>

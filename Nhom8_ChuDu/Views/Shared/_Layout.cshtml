@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="~/Content/Contact.css">
     <link rel="stylesheet" href="~/Content/Slider.css">
     <link rel="stylesheet" href="~/Content/Search.css">
+    <link rel="stylesheet" href="~/Content/SearchKhachSan.css">
     <script type="text/javascript" src="~/Scripts/Slider.js"></script>
     <script type="text/javascript" src="~/Scripts/Contact.js"></script>
     <title>Document</title>
@@ -45,7 +46,7 @@
                 <div class="container-head">
                     <div class="left-bottom">
                         <div class="logo">
-                            <a href="https://www.chudu24.com" title="Khách Sạn, Đánh Giá, Khuyến Mãi">
+                            <a href="@Url.Action("Index","Home")">
                                 <img alt="Khách Sạn, Đánh Giá, Khuyến Mãi" src="~/Image/logo.png">
                             </a>
                         </div>
@@ -64,7 +65,7 @@
                             </li>
                             <li class="">
                                 <a class="" href="//www.chudu24.com/khach-san/khuyen-mai.html" title="Khuyến mãi">
-                                    @Html.ActionLink("Khuyến mãi", "Content", "Home")
+                                    @Html.ActionLink("Khuyến mãi", "TopKhuyenMai", "KhachSans")
                                 </a>
                             </li>
                             <li class="">

@@ -24,6 +24,16 @@ namespace Nhom8_ChuDu.Controllers
             var khachSans = db.KhachSans.Select(p => p);
             return PartialView(khachSans);
         }
+        public ActionResult TopKhuyenMai()
+        {
+            return View();
+        }
+        public PartialViewResult _SearchKhachSan()
+        {
+            int ID = int.Parse(Request["city"]);
+            var khachSans = db.KhachSans.Where(p => p.IDThanhPho == ID);
+            return PartialView(khachSans);
+        }
 
         public ActionResult Detail(string id)
         {
