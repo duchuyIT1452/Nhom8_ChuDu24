@@ -1,9 +1,146 @@
+<<<<<<< HEAD
 ﻿@{
+=======
+﻿@*@model PagedList.IPagedList<Nhom8_ChuDu.Models.KhachSan>
+    @using PagedList.Mvc;
+    <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+    @{
+        ViewBag.Title = "Index";
+    }
+
+    <h2>Khách sạn</h2>
+
+    <p>
+        @Html.ActionLink("Tạo mới", "Create")
+    </p>
+
+    @using (Html.BeginForm())
+    {
+        <p>
+            Tìm khách sạn: @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+            <input type="submit" value="Tìm" />
+        </p>
+    }
+
+    <table class="table">
+        <tr>
+            <th>
+                Tên thành phố
+            </th>
+            <th>
+                @Html.ActionLink("Tên khách sạn", "Index", new
+                   {
+                       sortOrder = ViewBag.SapTheoTen,
+                       currentFilter = ViewBag.CurrentFilter
+                   })
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                Ảnh
+            </th>
+            <th>
+                Mô tả
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr style="height: 5rem; text-align: center">
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThanhPho.Ten)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ten)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaChi)
+                </td>
+                <td>
+                    @{
+                        string ImagePath = "~/Image/Khách Sạn/" + item.Anh;
+                    }
+                    <img src="@Url.Content(ImagePath)" width="100" class="img-thumbnail" />
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MoTa)
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "Edit", new { id = item.IDKS }) |
+                    @Html.ActionLink("Chi tiết", "Details", new { id = item.IDKS }) |
+                    @Html.ActionLink("Xóa", "Delete", new { id = item.IDKS })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))*@
+@model PagedList.IPagedList<Nhom8_ChuDu.Models.KhachSan>
+@using PagedList.Mvc;
+
+@{
+>>>>>>> 7feec651577ea7bea95c5e6bc03075d15ef66324
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<link href="~/Content/khachsan.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-
+<div class="row">
+    <div class="ad col-3 p-3">
+        <div>
+            <img src="//du-lich.chudu24.com/f/m/1707/07/360x433-Tron-goi-he-gd---Mien-phi-tre-em--4.jpg" alt=""
+                 title="Tron goi gia dinh mien phi tre em" style="height:431px">
+        </div>
+    </div>
+    <div class="col-9 p-3">
+        <div class="sapxep d-flex mb-3">
+            <span>Sắp xếp:</span>
+            <span>  @Html.ActionLink("Tên Khách sạn", "Index", new { sortOrder = ViewBag.SapTheoTen, curentFilter = ViewBag.curentFilter })</span>
+            @using (Html.BeginForm())
+            {
+                <span>
+                    Tìm khách sạn: @Html.TextBox("searchString", ViewBag.curentFilter as string)
+                    <input type="submit" value="Tìm" />
+                </span>
+            }
+        </div>
+        <div class="main">
+            @foreach (var item in Model)
+            {
+                <div class="content-item d-flex">
+                    <div class="thumbnail">
+                        <a href="/KhachSans/PhongKs?IDKS=@Html.DisplayFor(modelItem => item.IDKS)">
+                            <img src="//du-lich.chudu24.com/f/m/2105/18/melia-ho-tram-beach-resort-4.jpg?w=250&amp;h=200"
+                                 data-original="//du-lich.chudu24.com/f/m/2105/18/melia-ho-tram-beach-resort-4.jpg?w=250&amp;h=200"
+                                 alt="Melia Hồ Tràm Beach Resort" style="display: inline;">
+                        </a>
+                    </div>
+                    <div class="text-content p-3 w-100">
+                        <a href="/KhachSans/PhongKs?IDKS=@Html.DisplayFor(modelItem => item.IDKS)"><h2> @Html.DisplayFor(modelItem => item.Ten)</h2></a>
+                        <div class="diachi py-3">@Html.DisplayFor(modelItem => item.DiaChi)</div>
+                        <div class="danhgia py-3">@Html.DisplayFor(modelItem => item.MoTa)</div>
+                        <div class="datphong d-flex mt-3 justify-content-end w-100">
+                            <div>
+                                <div class="button btn  mb-0">@Html.ActionLink("Chi tiết khách sạn", "PhongKs", new { IDKS = @Html.DisplayFor(modelItem => item.IDKS) })</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            <br />
+            Trang @(Model.PageCount<Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, curentFilter = ViewBag.curentFilter }))
+        </div>
+    </div>
+</div>
 
 
 

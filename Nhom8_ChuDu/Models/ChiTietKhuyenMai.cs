@@ -1,7 +1,8 @@
-namespace Nhom8_ChuDu.Models
+﻿namespace Nhom8_ChuDu.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
@@ -20,8 +21,12 @@ namespace Nhom8_ChuDu.Models
         public int IDPhongKS { get; set; }
 
         [Column(TypeName = "money")]
+        [Required(ErrorMessage = "Giá không được để trống!")]
+        [DisplayName("Giá")]
         public decimal? Gia { get; set; }
 
+        [Required(ErrorMessage = "Thời gian được để trống!")]
+        [DisplayName("Thời gian")]
         public string ThoiGian { get; set; }
 
         public virtual KhuyenMai KhuyenMai { get; set; }

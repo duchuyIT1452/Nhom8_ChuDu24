@@ -1,7 +1,8 @@
-namespace Nhom8_ChuDu.Models
+﻿namespace Nhom8_ChuDu.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
@@ -17,18 +18,26 @@ namespace Nhom8_ChuDu.Models
         }
 
         [Key]
+        [Required(ErrorMessage ="ID khách sạn không được để trống!")]
+        [DisplayName("ID khách sạn")]
         public int IDKS { get; set; }
 
+        [DisplayName("Tên khách sạn")]
         public string Ten { get; set; }
 
+        [DisplayName("Địa chỉ")]
         public string DiaChi { get; set; }
 
+        [DisplayName("Ảnh")]
         public string Anh { get; set; }
 
+        [DisplayName("Mô tả")]
         public string MoTa { get; set; }
 
+        [DisplayName("ID thành phố")]
         public int? IDThanhPho { get; set; }
 
+        [DisplayName("Thành phố")]
         public virtual ThanhPho ThanhPho { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

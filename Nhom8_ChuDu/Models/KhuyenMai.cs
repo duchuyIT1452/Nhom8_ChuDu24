@@ -1,7 +1,8 @@
-namespace Nhom8_ChuDu.Models
+﻿namespace Nhom8_ChuDu.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
@@ -16,10 +17,14 @@ namespace Nhom8_ChuDu.Models
         }
 
         [Key]
+        [Required(ErrorMessage = "ID khuyến mãi không được để trống !")]
+        [DisplayName("ID Khuyến mãi")]
         public int IDKhuyenMai { get; set; }
 
+        [DisplayName("Tên")]
         public string Ten { get; set; }
 
+        [DisplayName("Mô tả")]
         public string MoTa { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
