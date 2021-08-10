@@ -167,6 +167,7 @@
     <Content Include="Content\Contact.css" />
     <Content Include="Content\Content.css" />
     <Content Include="Content\Item_KhachSan.css" />
+    <Content Include="Content\khachsan.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\Search.css" />
     <Content Include="Content\Slider.css" />
@@ -282,6 +283,10 @@
     <Content Include="Views\TaiKhoans\Details.cshtml" />
     <Content Include="Views\TaiKhoans\Edit.cshtml" />
     <Content Include="Views\TaiKhoans\Index.cshtml" />
+    <Content Include="Views\KhachSans\DatPhong.cshtml" />
+    <Content Include="Views\KhachSans\DonHang.cshtml" />
+    <Content Include="Views\KhachSans\GioHang.cshtml" />
+    <Content Include="Views\KhachSans\PhongKs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
