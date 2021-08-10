@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>Chi tiết</h2>
 
 <div>
     <h4>KhachSan</h4>
@@ -36,7 +36,10 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Anh)
+            @{
+                string ImagePath = "~/Image/Khách Sạn/" + Model.Anh;
+            }
+            <img src="@Url.Content(ImagePath)" width="100" class="img-thumbnail" />
         </dt>
 
         <dd>
@@ -46,6 +49,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.IDKS }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.IDKS }) |
+    @Html.ActionLink("Trở lại danh sách khách sạn", "Index")
 </p>
