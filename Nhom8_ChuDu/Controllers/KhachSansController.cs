@@ -104,6 +104,12 @@ namespace Nhom8_ChuDu.Controllers
             var khachSans = db.KhachSans.Select(p => p);
             return PartialView(khachSans);
         }
+        public PartialViewResult TimKhachSan()
+        {
+            int ID = int.Parse(Request["city"]);
+            var khachSans = db.KhachSans.Where(p => p.IDThanhPho == ID);
+            return PartialView(khachSans);
+        }
 
         public ActionResult Detail(string id)
         {
@@ -111,6 +117,7 @@ namespace Nhom8_ChuDu.Controllers
             var phongKS = db.PhongKS.Where(p => p.IDKS.Equals(maKS));
             return View(phongKS.ToList());
         }
+
 
         // GET: KhachSans/Details/5
         public ActionResult Details(int? id)

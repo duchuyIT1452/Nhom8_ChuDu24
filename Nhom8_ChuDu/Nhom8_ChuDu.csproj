@@ -170,12 +170,14 @@
     <Content Include="Content\khachsan.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\Search.css" />
+    <Content Include="Content\SearchKhachSan.css" />
     <Content Include="Content\Slider.css" />
     <Content Include="Content\TrangChu.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\1140x150-du-lich-nhom-doan-1.jpg" />
     <Content Include="Image\360x433-bo-suu-tap-3.jpg" />
     <Content Include="Image\360x433-top-resort-sieu-sang-4.jpg" />
     <Content Include="Image\360x433-Tron-goi-he-gd---Mien-phi-tre-em--4.jpg" />
@@ -287,6 +289,7 @@
     <Content Include="Views\KhachSans\DonHang.cshtml" />
     <Content Include="Views\KhachSans\GioHang.cshtml" />
     <Content Include="Views\KhachSans\PhongKs.cshtml" />
+    <Content Include="Views\KhachSans\TimKhachSan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -20,13 +20,11 @@
             font-weight: 400;
             font-size: 20px;
         }
-
-            .detail_hotel .container > p:hover {
+            .detail_hotel .container > p a:hover {
                 text-decoration: underline;
                 color: #86b817;
                 cursor: pointer;
             }
-
         .detail_hotel .container .hotel-of-city {
             width: 100%;
             height: auto;
