@@ -104,12 +104,6 @@ namespace Nhom8_ChuDu.Controllers
             var khachSans = db.KhachSans.Select(p => p);
             return PartialView(khachSans);
         }
-        public PartialViewResult TimKhachSan()
-        {
-            int ID = int.Parse(Request["city"]);
-            var khachSans = db.KhachSans.Where(p => p.IDThanhPho == ID);
-            return PartialView(khachSans);
-        }
 
         public ActionResult Detail(string id)
         {
@@ -117,7 +111,6 @@ namespace Nhom8_ChuDu.Controllers
             var phongKS = db.PhongKS.Where(p => p.IDKS.Equals(maKS));
             return View(phongKS.ToList());
         }
-
 
         // GET: KhachSans/Details/5
         public ActionResult Details(int? id)
@@ -164,9 +157,9 @@ namespace Nhom8_ChuDu.Controllers
                     db.KhachSans.Add(khachSan);
                     db.SaveChanges();
                 }
-                    return RedirectToAction("Index");
+                return RedirectToAction("Index");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 ViewBag.Error = "Lỗi nhập dữ liệu !" + ex.Message;
                 ViewBag.IDThanhPho = new SelectList(db.ThanhPhoes, "IDThanhPho", "Ten", khachSan.IDThanhPho);
@@ -213,9 +206,9 @@ namespace Nhom8_ChuDu.Controllers
                     db.Entry(khachSan).State = EntityState.Modified;
                     db.SaveChanges();
                 }
-                    return RedirectToAction("Index");
+                return RedirectToAction("Index");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 ViewBag.Error = "Lỗi nhập dữ liệu !" + ex.Message;
                 ViewBag.IDThanhPho = new SelectList(db.ThanhPhoes, "IDThanhPho", "Ten", khachSan.IDThanhPho);
