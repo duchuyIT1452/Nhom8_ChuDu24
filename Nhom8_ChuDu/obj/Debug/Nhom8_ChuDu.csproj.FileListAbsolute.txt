@@ -591,3 +591,7 @@ C:\Users\duchu\OneDrive\Máy tính\New folder (6)\Nhom8_ChuDu24\Nhom8_ChuDu\obj\
 C:\Users\duchu\OneDrive\Máy tính\New folder (6)\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.CopyComplete
 C:\Users\duchu\OneDrive\Máy tính\New folder (6)\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.dll
 C:\Users\duchu\OneDrive\Máy tính\New folder (6)\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.pdb
+C:\Users\duchu\OneDrive\Máy tính\Nhom8_1\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.dll
+C:\Users\duchu\OneDrive\Máy tính\Nhom8_1\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.Mvc.dll
+C:\Users\duchu\OneDrive\Máy tính\Nhom8_1\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.xml
+C:\Users\duchu\OneDrive\Máy tính\Nhom8_1\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.Mvc.xml
