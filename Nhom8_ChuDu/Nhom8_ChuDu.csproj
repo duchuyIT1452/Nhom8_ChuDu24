@@ -168,6 +168,7 @@
     <Content Include="Content\Content.css" />
     <Content Include="Content\Item_KhachSan.css" />
     <Content Include="Content\khachsan.css" />
+    <Content Include="Content\login.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\Search.css" />
     <Content Include="Content\SearchKhachSan.css" />
@@ -212,6 +213,7 @@
     <Content Include="Image\Tỉnh thành\phan-thiet.jpg" />
     <Content Include="Image\Tỉnh thành\phu-quoc.jpg" />
     <Content Include="Image\Tỉnh thành\vung-tau.jpg" />
+    <Content Include="Image\unnamed.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -294,6 +296,7 @@
     <Content Include="Views\KhachSans\TimKhachSan.cshtml" />
     <Content Include="Views\Shared\SliderBot.cshtml" />
     <Content Include="Views\Home\DangNhap.cshtml" />
+    <Content Include="Views\Home\register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

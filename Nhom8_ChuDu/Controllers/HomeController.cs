@@ -59,5 +59,22 @@ namespace Nhom8_ChuDu.Controllers
             Session.Clear();
             return RedirectToAction("Index");
         }
+
+        public ActionResult register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult register([Bind(Include = "IDTK, MatKhau, Ten, DiaChi, SDT, VaiTro")] TaiKhoan taiKhoan)
+        {
+            taiKhoan.IDTK = db.TaiKhoans.ToList().Last().IDTK + 1;
+            taiKhoan.VaiTro = false;
+            var pass = Request.Files["retrypassword"];
+            db.TaiKhoans.Add(taiKhoan);
+            db.SaveChanges();
+            return RedirectToAction("register");
+        }
     }
 }
