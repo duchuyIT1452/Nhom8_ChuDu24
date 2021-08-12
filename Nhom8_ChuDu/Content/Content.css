@@ -17,13 +17,7 @@ a {
     text-decoration: none;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
+
 
 h1,
 h2,
@@ -220,7 +214,7 @@ table {
 .slidebar {
     width: 324px;
     position: fixed;
-    top: 20px;
+    top: 210px;
     right: 50px;
     bottom: auto;
     z-index: 1;
@@ -413,10 +407,6 @@ hr {
     height: 30px;
 }
 
-i {
-    color: #4790cd;
-    margin-left: 30px;
-}
 
 .service {
     margin-top: 20px;

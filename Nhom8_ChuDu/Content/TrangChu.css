@@ -225,6 +225,7 @@ body {
     height: 623px;
     display: flex;
     justify-content: center;
+    border-top: 2px solid #eeeeee;
 }
 
     #footer .container {
