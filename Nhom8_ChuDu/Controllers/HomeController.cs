@@ -44,14 +44,20 @@ namespace Nhom8_ChuDu.Controllers
                     Session["VaiTro"] = user.FirstOrDefault().VaiTro;
                     if (Session["VaiTro"].Equals(true))
                     {
-                        return RedirectToAction("Index");
+                        return RedirectToAction("Index_admin");
                     }
+                    else
+                        return RedirectToAction("Index");
                 }
                 else
                 {
                     ViewBag.error = "Sai tên đăng nhập hoặc mật khẩu";
                 }
             }
+            return View();
+        }
+        public ActionResult Index_admin()
+        {
             return View();
         }
         public ActionResult DangXuat()

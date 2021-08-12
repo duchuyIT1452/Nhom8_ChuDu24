@@ -1,11 +1,14 @@
-﻿@model IEnumerable<Nhom8_ChuDu.Models.KhachSan>
+﻿
+@model IEnumerable<Nhom8_ChuDu.Models.KhachSan>
 @{
     ViewBag.Title = "TimKhachSan";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="detail_hotel">
     <div class="container">
-        <p>Danh sách khách sạn ở @foreach (var item in Model) { @item.ThanhPho.Ten; break; }</p>
+        <p>Danh sách khách sạn ở @foreach (var item in Model)
+        {@item.ThanhPho.Ten; break;
+    }</p>
         <div class="hotel-of-city">
             @foreach (var item in Model)
             {
