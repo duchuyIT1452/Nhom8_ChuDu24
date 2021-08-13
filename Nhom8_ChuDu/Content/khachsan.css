@@ -66,8 +66,12 @@
     }
 
 .button {
-    background-color: #86b817;
-    border-color: #86b817;
+    background-color: #86b817 !important;
+    border-color: #86b817 !important;
+    color: white;
+}
+
+.button  a {
     color: white;
 }
 
@@ -80,5 +84,13 @@
     .button:active {
         background-color: #86b817;
         border-color: #86b817;
+        color: white;
+    }
+
+    .button:hover a{
+        color: white;
+    }
+
+    .button:active a{
         color: white;
     }

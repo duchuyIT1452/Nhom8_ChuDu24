@@ -307,8 +307,10 @@ namespace Nhom8_ChuDu.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult DatPhong(int IDPhongKS, int soluong, string sodienthoai)
+        public ActionResult DatPhong(int IDPhongKS, int soluong, string sodienthoai, string email)
         {
+            DateTime curTime = new DateTime();
+            
             // Nếu đã lưu sesion sdt thì thêm vào giỏ hàng và chuyển đến giỏi hàng
             if (Session["sodienthoai"] != null)
             {
@@ -321,8 +323,11 @@ namespace Nhom8_ChuDu.Controllers
 
                 var datphong = new DatPhong();
                 datphong.IDPhongKS = IDPhongKS;
+                datphong.IDDatPhong = 1;
                 datphong.SoLuong = soluong;
                 datphong.SDT = sodienthoai;
+                datphong.Email = email;
+                datphong.ThoiGian = curTime.ToString();
                 dp.Add(datphong);
 
                 Session["giohang"] = dp;
@@ -335,9 +340,12 @@ namespace Nhom8_ChuDu.Controllers
                 Session["sodienthoai"] = sodienthoai;
                 List<DatPhong> dp = new List<DatPhong>();
                 var datphong = new DatPhong();
+                datphong.IDDatPhong = 1;
                 datphong.IDPhongKS = IDPhongKS;
                 datphong.SoLuong = soluong;
                 datphong.SDT = sodienthoai;
+                datphong.Email = email;
+                datphong.ThoiGian = curTime.ToString();
                 dp.Add(datphong);
                 Session["giohang"] = dp;
                 return RedirectToAction("GioHang");
