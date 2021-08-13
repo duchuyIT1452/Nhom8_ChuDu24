@@ -1,18 +1,14 @@
-﻿@model PagedList.IPagedList<Nhom8_ChuDu.Models.PhongK>
+﻿@model PagedList.IPagedList<Nhom8_ChuDu.Models.KhachSan>
 @using PagedList.Mvc;
 <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
-
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Admin.cshtml";
+    Layout = "";
 }
-
-<h2>Phòng khách sạn</h2>
-
+<h2>Khách sạn</h2>
 <p>
     @Html.ActionLink("Tạo mới", "Create")
 </p>
-
 @using (Html.BeginForm())
 {
     <p>
@@ -20,62 +16,57 @@
         <input type="submit" value="Tìm" />
     </p>
 }
-
 <table class="table">
     <tr>
         <th>
-            Tên Khách sạn
+            Tên thành phố
         </th>
         <th>
-            @Html.ActionLink("Tên phòng", "Index", new
+            @Html.ActionLink("Tên khách sạn", "Index", new
                {
                    sortOrder = ViewBag.SapTheoTen,
                    currentFilter = ViewBag.CurrentFilter
                })
         </th>
         <th>
-            Loại phòng
+            Địa chỉ
         </th>
         <th>
-            @Html.ActionLink("Giá phòng", "Index", new
-               {
-                   sortOrder = ViewBag.SapTheoGia,
-                   currentFilter = ViewBag.CurrentFilter
-               })
+            Ảnh
         </th>
         <th>
             Mô tả
         </th>
         <th></th>
     </tr>
-
     @foreach (var item in Model)
     {
-        <tr style="text-align:center; height:5rem;">
+        <tr style="height: 5rem; text-align: center">
             <td>
-                @Html.DisplayFor(modelItem => item.KhachSan.Ten)
+                @Html.DisplayFor(modelItem => item.ThanhPho.Ten)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Ten)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Loai)
+                @Html.DisplayFor(modelItem => item.DiaChi)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Gia)
+                @{
+                    string ImagePath = "~/Image/Khách Sạn/" + item.Anh;
+                }
+                <img src="@Url.Content(ImagePath)" width="100" class="img-thumbnail" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.MoTa)
             </td>
             <td>
-                @Html.ActionLink("Sửa", "Edit", new { id = item.IDPhongKS }) |
-                @Html.ActionLink("Chi tiết", "Details", new { id = item.IDPhongKS }) |
-                @Html.ActionLink("Xóa", "Delete", new { id = item.IDPhongKS })
+                @Html.ActionLink("Sửa", "Edit", new { id = item.IDKS }) |
+                @Html.ActionLink("Chi tiết", "Details", new { id = item.IDKS }) |
+                @Html.ActionLink("Xóa", "Delete", new { id = item.IDKS })
             </td>
         </tr>
     }
-
 </table>
-Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
-@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
-
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))

@@ -300,6 +300,8 @@
     <Content Include="Views\KhachSans\SearchKS.cshtml" />
     <Content Include="Views\Shared\_Admin.cshtml" />
     <Content Include="Views\Home\Index_admin.cshtml" />
+    <Content Include="Views\KhachSans\Index__Admin.cshtml" />
+    <Content Include="Views\KhachSans\Index__detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

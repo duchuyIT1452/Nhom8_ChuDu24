@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "Edit";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
 @{
@@ -65,7 +65,7 @@
 
 
 <div>
-    @Html.ActionLink("Trở lại danh sách khách sạn", "Index")
+    @Html.ActionLink("Trở lại danh sách khách sạn", "Index__Admin")
 </div>
 
 @if (ViewBag.Error != null)

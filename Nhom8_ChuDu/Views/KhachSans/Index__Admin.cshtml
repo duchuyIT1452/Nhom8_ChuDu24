@@ -1,20 +1,14 @@
-﻿
-    @{ ViewBag.Title = "Index_admin";
-        Layout = "~/Views/Shared/_Admin.cshtml"; }
-
-    @model PagedList.IPagedList<Nhom8_ChuDu.Models.KhachSan>
+﻿@model PagedList.IPagedList<Nhom8_ChuDu.Models.KhachSan>
     @using PagedList.Mvc;
     <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
-
     @{
-        Html.RenderAction("Index__detail", "KhachSans");
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_Admin.cshtml";
     }
-@*<h2>Khách sạn</h2>
-
+    <h2>Khách sạn</h2>
     <p>
         @Html.ActionLink("Tạo mới", "Create")
     </p>
-
     @using (Html.BeginForm())
     {
         <p>
@@ -22,7 +16,6 @@
             <input type="submit" value="Tìm" />
         </p>
     }
-
     <table class="table">
         <tr>
             <th>
@@ -46,7 +39,6 @@
             </th>
             <th></th>
         </tr>
-
         @foreach (var item in Model)
         {
             <tr style="height: 5rem; text-align: center">
@@ -64,7 +56,6 @@
                         string ImagePath = "~/Image/Khách Sạn/" + item.Anh;
                     }
                     <img src="@Url.Content(ImagePath)" width="100" class="img-thumbnail" />
-
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.MoTa)
@@ -76,8 +67,7 @@
                 </td>
             </tr>
         }
-
     </table>
-
     Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
-    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))*@
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+

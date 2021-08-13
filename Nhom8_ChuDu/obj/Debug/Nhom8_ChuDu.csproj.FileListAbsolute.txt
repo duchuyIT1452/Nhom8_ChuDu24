@@ -680,3 +680,7 @@ C:\Users\dungb\Downloads\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.
 C:\Users\dungb\Downloads\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.CopyComplete
 C:\Users\dungb\Downloads\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.dll
 C:\Users\dungb\Downloads\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.pdb
+E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.dll
+E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.Mvc.dll
+E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.xml
+E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.Mvc.xml

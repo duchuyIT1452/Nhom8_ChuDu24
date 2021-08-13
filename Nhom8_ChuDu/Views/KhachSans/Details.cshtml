@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
 <h2>Chi tiết</h2>
@@ -50,5 +50,5 @@
 </div>
 <p>
     @Html.ActionLink("Sửa", "Edit", new { id = Model.IDKS }) |
-    @Html.ActionLink("Trở lại danh sách khách sạn", "Index")
+    @Html.ActionLink("Trở lại danh sách khách sạn", "Index__Admin")
 </p>

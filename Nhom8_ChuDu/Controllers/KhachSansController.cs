@@ -17,47 +17,90 @@ namespace Nhom8_ChuDu.Controllers
         private ChuDu24 db = new ChuDu24();
 
         // GET: KhachSans
-        //public ActionResult Index(string sortOrder, string searchString, string currentFilter, int ?page)
-        //{
-        //    //các biến sắp xếp
-        //    ViewBag.CurrentSort = sortOrder;
+        public ActionResult Index__Admin(string sortOrder, string searchString, string currentFilter, int? page)
+        {
+            //các biến sắp xếp
+            ViewBag.CurrentSort = sortOrder;
 
-        //    ViewBag.SapTheoTen = String.IsNullOrEmpty(sortOrder) ? "ten_desc" : "";
+            ViewBag.SapTheoTen = String.IsNullOrEmpty(sortOrder) ? "ten_desc" : "";
 
-        //    //lấy giá trị của bộ lọc dữ liệu hiện tại
-        //    if (searchString != null)
-        //    {
-        //        page = 1;
-        //    }
-        //    else
-        //    {
-        //        searchString = currentFilter;
-        //    }
-        //    ViewBag.CurrentFilter = searchString;
+            //lấy giá trị của bộ lọc dữ liệu hiện tại
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+            ViewBag.CurrentFilter = searchString;
 
-        //    var khachSans = db.KhachSans.Include(k => k.ThanhPho);
+            var khachSans = db.KhachSans.Include(k => k.ThanhPho);
 
-        //    //lọc theo tên hàng
-        //    if (!String.IsNullOrEmpty(searchString))
-        //    {
-        //        khachSans = khachSans.Where(k => k.Ten.Contains(searchString));
-        //    }
-        //    switch (sortOrder)
-        //    {
-        //        case "ten_desc":
-        //            khachSans = khachSans.OrderByDescending(k => k.Ten);
-        //            break;
-        //        default:
-        //            khachSans = khachSans.OrderBy(k => k.Ten);
-        //            break;
-        //    }
+            //lọc theo tên hàng
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                khachSans = khachSans.Where(k => k.Ten.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "ten_desc":
+                    khachSans = khachSans.OrderByDescending(k => k.Ten);
+                    break;
+                default:
+                    khachSans = khachSans.OrderBy(k => k.Ten);
+                    break;
+            }
 
-        //    khachSans = khachSans.OrderBy(k => k.IDKS);
-        //    int pageSize = 5;
-        //    int pageNumber = (page ?? 1);
+            khachSans = khachSans.OrderBy(k => k.IDKS);
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
 
-        //    return View(khachSans.ToPagedList(pageNumber,pageSize));
-        //}
+            return View(khachSans.ToPagedList(pageNumber, pageSize));
+        }
+
+
+        public ActionResult Index__detail(string sortOrder, string searchString, string currentFilter, int? page)
+        {
+            //các biến sắp xếp
+            ViewBag.CurrentSort = sortOrder;
+
+            ViewBag.SapTheoTen = String.IsNullOrEmpty(sortOrder) ? "ten_desc" : "";
+
+            //lấy giá trị của bộ lọc dữ liệu hiện tại
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+            ViewBag.CurrentFilter = searchString;
+
+            var khachSans = db.KhachSans.Include(k => k.ThanhPho);
+
+            //lọc theo tên hàng
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                khachSans = khachSans.Where(k => k.Ten.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "ten_desc":
+                    khachSans = khachSans.OrderByDescending(k => k.Ten);
+                    break;
+                default:
+                    khachSans = khachSans.OrderBy(k => k.Ten);
+                    break;
+            }
+
+            khachSans = khachSans.OrderBy(k => k.IDKS);
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+
+            return View(khachSans.ToPagedList(pageNumber, pageSize));
+        }
 
         public ActionResult Index(string sortOrder, string searchString, string curentFilter, int? page)
         {
