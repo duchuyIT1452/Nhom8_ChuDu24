@@ -111,11 +111,13 @@
                                 <a class="" href="" title="ChuduInfo">
                                     @Html.ActionLink("Phòng khách sạn", "Index", "PhongKs")
                                 </a>
-                            </li><li class="">
+                            </li>
+                            <li class="">
                                 <a class="" href="" title="ChuduInfo">
                                     @Html.ActionLink("Tài khoản", "Index", "TaiKhoans")
                                 </a>
-                            </li><li class="">
+                            </li>
+                            <li class="">
                                 <a class="" href="" title="ChuduInfo">
                                     @Html.ActionLink("Thành phố", "Index", "ThanhPhoes")
                                 </a>
@@ -126,7 +128,7 @@
             </div>
         </div>
     </header>
-    <div class="body-content">
+    <div class="container">
         @RenderBody();
     </div>
     <footer id="footer">
@@ -240,5 +242,8 @@
             </div>
         </div>
     </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

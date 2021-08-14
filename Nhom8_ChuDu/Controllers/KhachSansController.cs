@@ -204,7 +204,7 @@ namespace Nhom8_ChuDu.Controllers
                 }
                 db.KhachSans.Add(khachSan);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index__Admin");
             }
             catch (Exception ex)
             {
@@ -253,7 +253,7 @@ namespace Nhom8_ChuDu.Controllers
                     db.Entry(khachSan).State = EntityState.Modified;
                     db.SaveChanges();
                 }
-                return RedirectToAction("Index");
+                return RedirectToAction("Index__Admin");
             }
             catch (Exception ex)
             {
@@ -288,7 +288,7 @@ namespace Nhom8_ChuDu.Controllers
             {
                 db.KhachSans.Remove(khachSan);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index__Admin");
             }
             catch (Exception ex)
             {
