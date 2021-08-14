@@ -243,7 +243,6 @@ E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuD
 E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.CopyComplete
 E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.dll
 E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.pdb
-C:\Users\duchu\OneDrive\Máy tính\Nhom8_1\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csprojAssemblyReference.cache
 C:\Users\duchu\OneDrive\Máy tính\Nhom8_1\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.CoreCompileInputs.cache
 C:\Users\duchu\OneDrive\Máy tính\Nhom8_1\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.dll
 C:\Users\duchu\OneDrive\Máy tính\Nhom8_1\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.pdb
@@ -684,3 +683,4 @@ E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.dll
 E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.Mvc.dll
 E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.xml
 E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\PagedList.Mvc.xml
+C:\Users\duchu\OneDrive\Máy tính\Nhom8_1\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csprojAssemblyReference.cache

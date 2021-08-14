@@ -9,6 +9,7 @@ using System.Web;
 using System.Web.Mvc;
 using Nhom8_ChuDu.Models;
 using PagedList;
+using System.IO;
 
 namespace Nhom8_ChuDu.Controllers
 {
@@ -192,20 +193,17 @@ namespace Nhom8_ChuDu.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
+                khachSan.Anh = "";
+                var f = Request.Files["ImageFile"];
+                if (f != null && f.ContentLength > 0)
                 {
-                    khachSan.Anh = "";
-                    var f = Request.Files["ImageFile"];
-                    if (f != null && f.ContentLength > 0)
-                    {
-                        string FileName = System.IO.Path.GetFileName(f.FileName);
-                        string UpLoadPath = Server.MapPath("~/Image/Khách Sạn/" + FileName);
-                        f.SaveAs(UpLoadPath);
-                        khachSan.Anh = FileName;
-                    }
-                    db.KhachSans.Add(khachSan);
-                    db.SaveChanges();
+                    string FileName = System.IO.Path.GetFileName(f.FileName);
+                    string UploadPath = Path.Combine(Server.MapPath("~/Image/Khách sạn/"), FileName);
+                    f.SaveAs(UploadPath);
+                    khachSan.Anh = FileName;
                 }
+                db.KhachSans.Add(khachSan);
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
             catch (Exception ex)
