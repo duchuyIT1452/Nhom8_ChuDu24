@@ -8,7 +8,7 @@
                         <div class="city-search">
                             <p>Thành phố</p>
                             <select id="city" name="city" class="select-city">
-                                <option value="" selected disabled hidden>Chọn thành phố</option>
+                                <option value="df" selected disabled hidden>Chọn thành phố</option>
                                 @foreach (var item in Model)
                                 {
                                     <option value="@item.IDThanhPho">@item.Ten</option>
@@ -17,10 +17,10 @@
                         </div>
                         <div class="hotel-search">
                             <p>Khách sạn</p>
-                            <input type="text" placeholder="Nhập tên khách sạn" />
+                            <input id="hotel" name="hotel" type="text" placeholder="Nhập tên khách sạn" />
                         </div>
                         <div class="button-search">
-                            <button type="submit">TÌM KIẾM<i style="margin-left: 5px;" class="fas fa-search"></i></button>
+                            <button type="submit" onclick="fc()">TÌM KIẾM<i style="margin-left: 5px;" class="fas fa-search"></i></button>
                         </div>
                     </form>
                 </div>
@@ -35,3 +35,4 @@
         </div>
     </div>
 </div>
+

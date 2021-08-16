@@ -150,9 +150,30 @@ namespace Nhom8_ChuDu.Controllers
         }
         public PartialViewResult TimKhachSan()
         {
-            int ID = int.Parse(Request["city"]);
-            var khachSans = db.KhachSans.Where(p => p.IDThanhPho == ID);
-            return PartialView(khachSans);
+            
+            if(Request["city"] != null && Request["hotel"] == "")
+            {
+                int ID = int.Parse(Request["city"]);
+                var khachSans = db.KhachSans.Where(p => p.IDThanhPho == ID);
+                return PartialView(khachSans);
+            }
+            else if(Request["hotel"] != "" && Request["city"] == null)
+            {
+                string tenKS = Request["hotel"];
+                var khachSans = db.KhachSans.Where(p => p.Ten.ToLower() == tenKS.ToLower());
+                return PartialView(khachSans);
+            }
+            else if (Request["city"] != null && Request["hotel"] != "")
+            {
+                int ID = int.Parse(Request["city"]);
+                string tenKS = Request["hotel"];
+                var tp = db.KhachSans.Where(p => p.IDThanhPho == ID);
+                var khachSans = tp.Where(p => p.Ten == tenKS);
+                return PartialView(khachSans);
+                
+            }
+            return PartialView();
+            
         }
 
         public ActionResult Detail(string id)

@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<Nhom8_ChuDu.Models.KhachSan>
-<div class="main-km">
+<div style="margin-top:20px;" class="main-km">
     <div class="container">
         <div style="width: 100%; color:#666; font-family:Arial; font-weight:400; font-size:18px;">
             <p style="color:#666; font-family:Arial; font-weight:400; font-size:18px;">TOP KHUYẾN MÃI</p>
@@ -9,6 +9,7 @@
             <div class="row">
                 @foreach (var item in Model)
                 {
+                <div class="col-3">
                     <div class="item-khachsan">
                         <a href="@Url.Action("Detail","KhachSans", new { id = item.IDKS })">
                             <div class="product-img item-zoom">
@@ -24,6 +25,7 @@
                             <p style="text-transform:none; font-weight:100;">@Html.DisplayFor(modelItem => item.MoTa)</p>
                         </a>
                     </div>
+                </div>
                 }
             </div>
         </div>

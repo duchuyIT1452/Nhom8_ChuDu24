@@ -95,3 +95,11 @@
             .search-container .right p a:hover {
                 text-decoration: underline;
             }
+
+            .error {
+                display:none;
+                font-family:Arial;
+            }
+            .display-error {
+                display:block;
+            }

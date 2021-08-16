@@ -3,8 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    position:relative;
+    position: relative;
 }
 
 #header {
@@ -20,72 +21,75 @@ body {
     background-color: #86b817;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     text-transform: uppercase;
-    line-height:1;
+    line-height: 1;
 }
-    .top-head .container{
+
+    .top-head .container {
         display: flex;
         justify-content: space-between;
-        align-items:center;
+        align-items: center;
     }
-    .top-head .container .left-header {
-        width: 35%;
-        height: 100%;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-        .top-head .container .left-header ul {
-            display: flex;
-            width: 100%;
+
+        .top-head .container .left-header {
+            width: 35%;
             height: 100%;
-            justify-content: space-between;
+            display: flex;
             align-items: center;
-            margin-bottom:0;
+            justify-content: center;
         }
 
-            .top-head .container .left-header ul li {
-                list-style: none;
-                border-right: 1px solid #fff;
-                padding-right: 0.9rem;
+            .top-head .container .left-header ul {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0;
             }
 
-                .top-head .container .left-header ul li:last-child {
-                    border: none;
+                .top-head .container .left-header ul li {
+                    list-style: none;
+                    border-right: 1px solid #fff;
+                    padding-right: 0.9rem;
                 }
 
-    .top-head .container ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-family: Arial;
-        font-size: 12px;
-        line-height: 18px;
-    }
+                    .top-head .container .left-header ul li:last-child {
+                        border: none;
+                    }
 
-    .top-head .container .right-header {
-        width: 40%;
-        height: 100%;
-    }
-
-        .top-head .right-header ul {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom:0;
+        .top-head .container ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial;
+            font-size: 12px;
+            line-height: 18px;
         }
 
-            .top-head .right-header ul li {
-                list-style: none;
-                border-left: 1px solid #fff;
-                padding-left: 1rem;
-            }
+        .top-head .container .right-header {
+            width: 40%;
+            height: 100%;
+        }
 
-                .top-head .right-header ul li:first-child {
-                    border: none;
-                }
+    .top-head .right-header ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+        .top-head .right-header ul li {
+            list-style: none;
+            border-left: 1px solid #fff;
+            padding-left: 1rem;
+        }
+
+            .top-head .right-header ul li:first-child {
+                border: none;
+            }
 
     .top-head ul li a:hover {
         text-decoration: underline;
@@ -96,22 +100,23 @@ body {
     height: 76%;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     padding-bottom: 20px;
 }
-#header .bottom-head .container {
-    width:90%;
-    height:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
+
+    #header .bottom-head .container {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 .bottom-head .container-head {
     width: 100%;
     display: flex;
-    align-items:center;
-    justify-content:space-between;
+    align-items: center;
+    justify-content: space-between;
 }
 
     .bottom-head .container-head .left-bottom {
@@ -176,7 +181,7 @@ body {
 
         .bottom-head .container-head .right-bottom .feedback {
             padding: 20px 20px;
-            padding-right:40px;
+            padding-right: 40px;
             height: 100%;
             border-right: 1px solid #888;
         }
@@ -198,11 +203,11 @@ body {
 
     .bottom-head .container-head .text-content {
         height: 100%;
-        line-height:1;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        margin-top:10px;
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
     }
 
         .bottom-head .container-head .text-content p {
@@ -237,7 +242,7 @@ body {
             width: 24%;
             height: auto;
             margin-right: 30px;
-            line-height:1.2;
+            line-height: 1.2;
         }
 
             #footer .container .left a, #footer .container .left p {
@@ -325,7 +330,7 @@ body {
                     height: 34px;
                     padding: 6px 27px;
                     line-height: 1.5;
-                    width:auto;
+                    width: auto;
                 }
 
                 #footer .container .left .form .input-email .email-submit {
@@ -356,7 +361,7 @@ body {
         #footer .container .mid1 {
             width: 25%;
             position: relative;
-            line-height:1.2;  
+            line-height: 1.2;
         }
 
             #footer .container .mid1 h3 {
@@ -407,7 +412,7 @@ body {
         #footer .container .mid2 {
             width: 25%;
             position: relative;
-            line-height:1.2;
+            line-height: 1.2;
         }
 
             #footer .container .mid2 h3 {
@@ -469,12 +474,13 @@ body {
 
         #footer .container .right {
             width: 25%;
-            line-height:1.2;
+            line-height: 1.2;
         }
-        #footer .container .right i {
-            color: #888;
-            font-size:15px;
-        }
+
+            #footer .container .right i {
+                color: #888;
+                font-size: 15px;
+            }
 
             #footer .container .right h3 {
                 text-transform: uppercase;
