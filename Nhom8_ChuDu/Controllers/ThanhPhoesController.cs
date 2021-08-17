@@ -139,21 +139,18 @@ namespace Nhom8_ChuDu.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
+                thanhPho.Anh = "";
+                var f = Request.Files["ImageFile"];
+                if (f != null && f.ContentLength > 0)
                 {
-                    thanhPho.Anh = "";
-                    var f = Request.Files["ImageFile"];
-                    if (f != null && f.ContentLength > 0)
-                    {
-                        string FileName = System.IO.Path.GetFileName(f.FileName);
-                        string UploadPath = Path.Combine(Server.MapPath("~/Image/Tỉnh thành/") + FileName);
-                        f.SaveAs(UploadPath);
-                        thanhPho.Anh = FileName;
-                    }
-                    db.Entry(thanhPho).State = EntityState.Modified;
-                    db.SaveChanges();
+                    string FileName = System.IO.Path.GetFileName(f.FileName);
+                    string UploadPath = Path.Combine(Server.MapPath("~/Image/Tỉnh thành/") + FileName);
+                    f.SaveAs(UploadPath);
+                    thanhPho.Anh = FileName;
                 }
-                    return RedirectToAction("Index");
+                db.Entry(thanhPho).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
             }
             catch(Exception ex)
             {

@@ -160,7 +160,7 @@ namespace Nhom8_ChuDu.Controllers
             else if(Request["hotel"] != "" && Request["city"] == null)
             {
                 string tenKS = Request["hotel"];
-                var khachSans = db.KhachSans.Where(p => p.Ten.ToLower() == tenKS.ToLower());
+                var khachSans = db.KhachSans.Where(p => p.Ten.ToLower().Contains(tenKS.ToLower()));
                 return PartialView(khachSans);
             }
             else if (Request["city"] != null && Request["hotel"] != "")

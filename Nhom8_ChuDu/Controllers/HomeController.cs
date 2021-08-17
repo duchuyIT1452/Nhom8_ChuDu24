@@ -80,7 +80,7 @@ namespace Nhom8_ChuDu.Controllers
             var pass = Request.Files["retrypassword"];
             db.TaiKhoans.Add(taiKhoan);
             db.SaveChanges();
-            return RedirectToAction("register");
+            return RedirectToAction("Index");
         }
     }
 }
