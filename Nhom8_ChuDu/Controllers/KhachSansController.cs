@@ -412,12 +412,6 @@ namespace Nhom8_ChuDu.Controllers
                 Session["giohang"] = dp;
                 return RedirectToAction("GioHang");
             }
-
-
-
-
-
-
             // Nếu chưa điền số điện thoại bắt điền
             ViewBag.IDPhongKS = IDPhongKS;
             ViewBag.soluong = soluong;
@@ -540,10 +534,6 @@ namespace Nhom8_ChuDu.Controllers
             }
 
             ViewBag.gioHang = dsphong;
-
-
-
-
             return View();
         }
     }
