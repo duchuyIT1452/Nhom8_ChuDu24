@@ -151,19 +151,19 @@ namespace Nhom8_ChuDu.Controllers
         public PartialViewResult TimKhachSan()
         {
             
-            if(Request["city"] != null && Request["hotel"] == "")
+            if(Request["city"] != "df" && Request["hotel"] == "")
             {
                 int ID = int.Parse(Request["city"]);
                 var khachSans = db.KhachSans.Where(p => p.IDThanhPho == ID);
                 return PartialView(khachSans);
             }
-            else if(Request["hotel"] != "" && Request["city"] == null)
+            else if(Request["hotel"] != "" && Request["city"] == "df")
             {
                 string tenKS = Request["hotel"];
                 var khachSans = db.KhachSans.Where(p => p.Ten.ToLower().Contains(tenKS.ToLower()));
                 return PartialView(khachSans);
             }
-            else if (Request["city"] != null && Request["hotel"] != "")
+            else if (Request["city"] != "df" && Request["hotel"] != "")
             {
                 int ID = int.Parse(Request["city"]);
                 string tenKS = Request["hotel"];
