@@ -46,9 +46,7 @@ h5 {
 }
 
 .content__container {
-    width: 1068px;
-    margin-right: auto;
-    margin-left: auto;
+    position:relative;
 }
 
 .main__content {
@@ -215,8 +213,7 @@ table {
     width: 324px;
     position: fixed;
     top: 210px;
-    right: 50px;
-    bottom: auto;
+    right: 120px;
     z-index: 1;
 }
 
