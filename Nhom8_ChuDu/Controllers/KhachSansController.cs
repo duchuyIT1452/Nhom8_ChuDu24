@@ -460,7 +460,6 @@ namespace Nhom8_ChuDu.Controllers
             if (Session["giohang"] == null)
             {
                 ViewBag.NoItems = "Chưa có phòng nào được đặt";
-
             }
             else
             {
