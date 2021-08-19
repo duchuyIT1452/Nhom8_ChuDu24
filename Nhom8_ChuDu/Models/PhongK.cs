@@ -22,14 +22,20 @@
         [DisplayName("ID phòng khách sạn")]
         public int IDPhongKS { get; set; }
 
+        [Required(ErrorMessage = "Tên phòng không được để trống !")]
         [DisplayName("Tên phòng")]
         public string Ten { get; set; }
+
+        [Required(ErrorMessage = "Loại phòng không được để trống !")]
         [DisplayName("Loại phòng")]
         public string Loai { get; set; }
 
+        [Required(ErrorMessage = "Giá phòng không được để trống !")]
         [Column(TypeName = "money")]
         [DisplayName("Giá phòng")]
         public decimal? Gia { get; set; }
+
+        [Required(ErrorMessage = "Mô tả phòng không được để trống !")]
         [DisplayName("Mô tả phòng")]
         public string MoTa { get; set; }
         [DisplayName("ID khách sạn")]

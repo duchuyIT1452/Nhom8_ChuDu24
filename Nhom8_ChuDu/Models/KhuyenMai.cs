@@ -21,9 +21,11 @@
         [DisplayName("ID Khuyến mãi")]
         public int IDKhuyenMai { get; set; }
 
+        [Required(ErrorMessage = "Tên khuyến mãi không được để trống !")]
         [DisplayName("Tên")]
         public string Ten { get; set; }
 
+        [Required(ErrorMessage = "Mô tả khuyến mãi không được để trống !")]
         [DisplayName("Mô tả")]
         public string MoTa { get; set; }
 

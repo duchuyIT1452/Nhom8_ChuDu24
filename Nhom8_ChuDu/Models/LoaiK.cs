@@ -21,6 +21,7 @@
         [DisplayName("ID loại khách sạn")]
         public int IDLoaiKs { get; set; }
 
+        [Required(ErrorMessage = "loại khách sạn không được để trống !")]
         [DisplayName("loại khách sạn")]
         public string Loai { get; set; }
 

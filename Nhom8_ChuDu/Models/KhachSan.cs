@@ -22,15 +22,18 @@
         [DisplayName("ID khách sạn")]
         public int IDKS { get; set; }
 
+        [Required(ErrorMessage = "Tên khách sạn không được để trống!")]
         [DisplayName("Tên khách sạn")]
         public string Ten { get; set; }
 
+        [Required(ErrorMessage = "Địa chỉ khách sạn không được để trống!")]
         [DisplayName("Địa chỉ")]
         public string DiaChi { get; set; }
 
         [DisplayName("Ảnh")]
         public string Anh { get; set; }
 
+        [Required(ErrorMessage = "Mô tả khách sạn không được để trống!")]
         [DisplayName("Mô tả")]
         public string MoTa { get; set; }
 

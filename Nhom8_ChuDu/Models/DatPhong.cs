@@ -19,6 +19,7 @@
         [DisplayName("ID phòng khách sạn")]
         public int IDPhongKS { get; set; }
 
+        [Required(ErrorMessage = "Email phòng không được để trống!")]
         [DisplayName("Email")]
         public string Email { get; set; }
 
