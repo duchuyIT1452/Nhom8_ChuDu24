@@ -40,11 +40,11 @@
                         </div>
                         <div class="text-content p-3 w-100">
                             <h2> @Html.DisplayFor(modelItem => item.Ten)</h2>
-                            <div class="diachi py-3">@Html.DisplayFor(modelItem => item.Ten)</div>
-                            <span class="danhgia py-3">@Html.DisplayFor(modelItem => item.IDKS)</span>
+                            <div class="diachi py-3">@Html.DisplayFor(modelItem => item.MoTa)</div>
+                            <span class="danhgia py-3">@Html.DisplayFor(modelItem => item.Loai)</span>
                             <div class="datphong d-flex mt-3 justify-content-between w-100">
                                 <div class="">
-                                    <p class="hotel-price"> 2.640<small>.000</small><br> <span>VNĐ/đêm</span> </p>
+                                    <p class="hotel-price"> @item.Gia<br> <span>VNĐ/đêm</span> </p>
                                 </div>
 
                                 <div style="width: 150px;">
@@ -67,7 +67,7 @@
                                 </div>
                                 <div>
                                     <input name="IDPhongKS" style="display: none" value="@item.IDPhongKS" />
-                                    <input class="button btn  mb-0" style="color: white; background: #b1d169" id="submit" type="submit" value="Đặt hàng">
+                                    <input class="button btn  mb-0" style="color: white; background: #b1d169" id="submit" type="submit" value="Đặt phòng">
                                 </div>
                             </div>
                         </div>
@@ -79,6 +79,7 @@
             @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, curentFilter = ViewBag.curentFilter }))
         </div>
     </div>
+</div>
 </div>
 
 

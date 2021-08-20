@@ -179,7 +179,7 @@ namespace Nhom8_ChuDu.Controllers
         public ActionResult Detail(string id)
         {
             int maKS = int.Parse(id);
-            var phongKS = db.PhongKS.Where(p => p.IDKS.Equals(maKS));
+            var phongKS = db.PhongKS.Where(p => p.IDKS.Equals(maKS) && p.ChiTietKhuyenMais.Count() > 0);
             return View(phongKS.ToList());
         }
 
@@ -372,7 +372,10 @@ namespace Nhom8_ChuDu.Controllers
         public ActionResult DatPhong(int IDPhongKS, int soluong, string sodienthoai, string email)
         {
             DateTime curTime = new DateTime();
-            
+            if (email == null)
+            {
+                email = "abc@123.com";
+            }
             // Nếu đã lưu sesion sdt thì thêm vào giỏ hàng và chuyển đến giỏi hàng
             if (Session["sodienthoai"] != null)
             {

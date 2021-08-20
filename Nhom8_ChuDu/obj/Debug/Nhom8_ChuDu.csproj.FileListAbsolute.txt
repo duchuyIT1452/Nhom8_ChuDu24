@@ -771,3 +771,4 @@ E:\DHUD\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.CoreCompileInputs
 E:\DHUD\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.CopyComplete
 E:\DHUD\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.dll
 E:\DHUD\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.pdb
+C:\Users\dungb\Desktop\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.AssemblyReference.cache
