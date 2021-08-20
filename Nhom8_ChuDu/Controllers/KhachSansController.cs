@@ -376,6 +376,10 @@ namespace Nhom8_ChuDu.Controllers
             {
                 email = "abc@123.com";
             }
+            if(Session["sodienthoai"] != null)
+            {
+                sodienthoai = Session["sodienthoai"].ToString();
+            }
             // Nếu đã lưu sesion sdt thì thêm vào giỏ hàng và chuyển đến giỏi hàng
             if (Session["sodienthoai"] != null)
             {
