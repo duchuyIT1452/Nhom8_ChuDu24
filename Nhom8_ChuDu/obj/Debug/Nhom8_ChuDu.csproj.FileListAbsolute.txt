@@ -684,3 +684,4 @@ E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\roslyn\vbc.exe.c
 E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\roslyn\vbc.rsp
 E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\roslyn\VBCSCompiler.exe
 E:\Lap trinh UD CSDL tren nen WEB\Nhom8_ChuDu24\Nhom8_ChuDu\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dungb\Desktop\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.AssemblyReference.cache

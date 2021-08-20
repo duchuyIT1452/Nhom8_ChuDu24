@@ -33,9 +33,12 @@
                 <div class="content-item d-flex">
                     <div class="thumbnail">
                         <a href="/KhachSans/PhongKs?IDKS=@Html.DisplayFor(modelItem => item.IDKS)">
-                            <img src="//du-lich.chudu24.com/f/m/2105/18/melia-ho-tram-beach-resort-4.jpg?w=250&amp;h=200"
+                            @{
+                                string ImagePath = "~/Image/Khách sạn/" + item.Anh;
+                            }
+                            <img src="@Url.Content(ImagePath)"
                                  data-original="//du-lich.chudu24.com/f/m/2105/18/melia-ho-tram-beach-resort-4.jpg?w=250&amp;h=200"
-                                 alt="Melia Hồ Tràm Beach Resort" style="display: inline;">
+                                 alt="Melia Hồ Tràm Beach Resort" style="display: inline; width: 230px; height: 230px;">
                         </a>
                     </div>
                     <div class="text-content p-3 w-100">

@@ -9,15 +9,15 @@
                 <th>Tên phòng</th>
                 <th>Loại phòng</th>
                 <th>Giá</th>
-                <th>Mô tả</th>
+                <th>Thời gian</th>
             </tr>
             @foreach (var item in Model)
             {
                 <tr>
                     <td>@item.Ten.ToString()</td>
                     <td>@item.Loai.ToString()</td>
-                    <td>@item.Gia.ToString()</td>
-                    <td>@item.MoTa.ToString()</td>
+                    <td>@item.ChiTietKhuyenMais.FirstOrDefault().Gia</td>
+                    <td>@item.ChiTietKhuyenMais.FirstOrDefault().ThoiGian</td>
                 </tr>
             }
         </table>

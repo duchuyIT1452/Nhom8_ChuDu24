@@ -179,7 +179,7 @@ namespace Nhom8_ChuDu.Controllers
         public ActionResult Detail(string id)
         {
             int maKS = int.Parse(id);
-            var phongKS = db.PhongKS.Where(p => p.IDKS.Equals(maKS));
+            var phongKS = db.PhongKS.Where(p => p.IDKS.Equals(maKS)&& p.ChiTietKhuyenMais.Count()>0);
             return View(phongKS.ToList());
         }
 
