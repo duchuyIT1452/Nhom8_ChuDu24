@@ -63,44 +63,9 @@ namespace Nhom8_ChuDu.Controllers
 
         public ActionResult Index__detail(string sortOrder, string searchString, string currentFilter, int? page)
         {
-            //các biến sắp xếp
-            ViewBag.CurrentSort = sortOrder;
+            var topphongdat = db.PhongKS.OrderByDescending(u => u.DatPhongs.Count).Take(3);
 
-            ViewBag.SapTheoTen = String.IsNullOrEmpty(sortOrder) ? "ten_desc" : "";
-
-            //lấy giá trị của bộ lọc dữ liệu hiện tại
-            if (searchString != null)
-            {
-                page = 1;
-            }
-            else
-            {
-                searchString = currentFilter;
-            }
-            ViewBag.CurrentFilter = searchString;
-
-            var khachSans = db.KhachSans.Include(k => k.ThanhPho);
-
-            //lọc theo tên hàng
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                khachSans = khachSans.Where(k => k.Ten.Contains(searchString));
-            }
-            switch (sortOrder)
-            {
-                case "ten_desc":
-                    khachSans = khachSans.OrderByDescending(k => k.Ten);
-                    break;
-                default:
-                    khachSans = khachSans.OrderBy(k => k.Ten);
-                    break;
-            }
-
-            khachSans = khachSans.OrderBy(k => k.IDKS);
-            int pageSize = 5;
-            int pageNumber = (page ?? 1);
-
-            return View(khachSans.ToPagedList(pageNumber, pageSize));
+            return View(topphongdat.ToList());
         }
 
         public ActionResult Index(string sortOrder, string searchString, string curentFilter, int? page)

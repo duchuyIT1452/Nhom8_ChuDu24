@@ -53,9 +53,9 @@
             <div class="container">
                 <div class="left-header">
                     <ul>
-                        <li><a href="@Url.Action("Index", "KhachSans")" id="btnBookQuick">Đặt phòng nhanh</a></li>
-                        <li><a href="@Url.Action("Index", "KhachSans")" id="btnBookGroup">Đặt phòng đoàn</a></li>
-                        <li><a href="@Url.Action("Index", "KhachSans")" id="btnBookVeNhanh">Đặt vé nhanh</a></li>
+                        <li><a href="@Url.Action("Index__Admin", "KhachSans")" id="btnBookQuick">Đặt phòng nhanh</a></li>
+                        <li><a href="@Url.Action("Index__Admin", "KhachSans")" id="btnBookGroup">Đặt phòng đoàn</a></li>
+                        <li><a href="@Url.Action("Index__Admin", "KhachSans")" id="btnBookVeNhanh">Đặt vé nhanh</a></li>
                     </ul>
                 </div>
                 <div class="right-header">
@@ -87,7 +87,7 @@
                 <div class="container-head">
                     <div class="left-bottom1">
                         <div class="logo">
-                            <a href="/" title="Khách Sạn, Đánh Giá, Khuyến Mãi">
+                            <a href="/Home/Index_admin" title="Khách Sạn, Đánh Giá, Khuyến Mãi">
                                 <img alt="Khách Sạn, Đánh Giá, Khuyến Mãi" src="~/Image/logo.png">
                             </a>
                         </div>
@@ -139,7 +139,7 @@
         @RenderBody()
     </div>
     <footer id="footer">
-        <div class="container">
+        <div class="container pt-3">
             <div class="left">
                 <a title="Khách Sạn, Đánh Giá, Khuyến Mãi">
                     <img alt="Khách Sạn, Đánh Giá, Khuyến Mãi" class="logo" src="~/Image/logo.png" />

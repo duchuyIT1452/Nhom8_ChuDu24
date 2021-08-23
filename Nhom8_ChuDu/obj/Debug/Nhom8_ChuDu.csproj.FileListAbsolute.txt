@@ -859,3 +859,4 @@ E:\Tài liệu học tập\LTCSDL nền Web\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\
 E:\Tài liệu học tập\LTCSDL nền Web\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.CopyComplete
 E:\Tài liệu học tập\LTCSDL nền Web\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.dll
 E:\Tài liệu học tập\LTCSDL nền Web\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.pdb
+C:\Users\dungb\Downloads\Nhom8_ChuDu24\Nhom8_ChuDu\obj\Debug\Nhom8_ChuDu.csproj.AssemblyReference.cache
