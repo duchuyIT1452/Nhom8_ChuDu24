@@ -37,7 +37,14 @@
                 <div class="right-header">
                     <ul>
                         <li><a href="#" id="btnGopY"><i class="fas fa-comments-dollar"></i></a></li>
-                        <li><a href="@Url.Action("register", "Home")">Đăng kí thành viên</a></li>
+                        @if (Session["Ten"] != null)
+                        {
+                            <li><a href="#">@Session["Ten"].ToString()</a></li>
+                        }
+                        else
+                        {
+                            <li><a href="@Url.Action("register", "Home")">Đăng kí thành viên</a></li>
+                        }
                         @if (Session["IDTK"] != null)
                         {
                             <li><a href="@Url.Action("DangXuat", "Home")">Đăng xuất</a></li>
