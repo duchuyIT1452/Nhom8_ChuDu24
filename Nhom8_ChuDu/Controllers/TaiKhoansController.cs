@@ -117,7 +117,7 @@ namespace Nhom8_ChuDu.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IDTK,MatKhau,Ten,DiaChi,SDT,VaiTro")] TaiKhoan taiKhoan)
+        public ActionResult Edit([Bind(Include = "IDTK,Ten,DiaChi,SDT,VaiTro")] TaiKhoan taiKhoan)
         {
             if (ModelState.IsValid)
             {

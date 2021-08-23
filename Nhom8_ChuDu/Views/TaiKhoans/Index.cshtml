@@ -23,9 +23,7 @@
 
 <table class="table">
     <tr>
-        <th>
-            Mật khẩu
-        </th>
+      
         <th>
             @Html.ActionLink("Tên", "Index", new
                {
@@ -48,9 +46,7 @@
     @foreach (var item in Model)
     {
         <tr style="height: 5rem; text-align: center">
-            <td>
-                @Html.DisplayFor(modelItem => item.MatKhau)
-            </td>
+          
             <td>
                 @Html.DisplayFor(modelItem => item.Ten)
             </td>
