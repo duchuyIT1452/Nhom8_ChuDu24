@@ -7,15 +7,15 @@
     <div class="container">
         <p>Danh sách khách sạn tìm kiếm là:</p>
         <div class="hotel-of-city">
-            @foreach (var item in Model)
-            {
+            @{
                 var count = Model.Count();
                 if (count == 0)
                 {
-                    <div>Không có khách sạn</div>
-                    break;
+                    <div style="font-family:Arial; color:#777;">Không có khách sạn cần tìm</div>
                 }
-
+            }
+            @foreach (var item in Model)
+            {
                 <div class="container-hotel">
                     <div class="hotel-mg">
                         <div class="left-container">

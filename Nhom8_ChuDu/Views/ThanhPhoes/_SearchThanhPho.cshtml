@@ -8,7 +8,7 @@
                         <div class="city-search">
                             <p>Thành phố</p>
                             <select id="city" name="city" class="select-city">
-                                <option value="df" selected>---Chọn thành phố---</option>
+                                <option value="0" selected>---Chọn thành phố---</option>
                                 @foreach (var item in Model)
                                 {
                                     <option value="@item.IDThanhPho">@item.Ten</option>
@@ -43,7 +43,7 @@
     function validateMyForm(event) {
         var strUser = e.options[e.selectedIndex].value;
         var ipHotel = hotel.value;
-        if (strUser == "df" && ipHotel == "") {
+        if (strUser == "0" && ipHotel == "") {
             console.log(strUser);
             error.className = "error display-error"
             event.preventDefault();
